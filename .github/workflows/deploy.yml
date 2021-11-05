@@ -21,8 +21,8 @@ jobs:
           yarn run build
           yarn run export
         env:
-          BASE_PATH: '/my-personal-website'
-          IMAGES_PATH: 'https://clementdv.github.io/my-personal-website/'
+          BASE_PATH: '/'
+          IMAGES_PATH: 'https://clementpoirier.fr/'
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
