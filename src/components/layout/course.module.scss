@@ -1,0 +1,101 @@
+@import '../../assets/styles/theme';
+
+$grey-text-color: #434343;
+$background-color: #f9f9f9;
+
+$grey-line-color: #c8c8c8;
+
+.course {
+  padding: $section-padding 0;
+}
+
+.structureTop {
+  position: relative;
+  padding: 30px;
+  background: $background-color;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+
+  @media screen and (max-width: 1125px) {
+    //1125px it resize so must break in 1 columns
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
+.cell {
+  position: relative;
+  display: block;
+  text-align: center;
+  flex: 1 1 400px;
+
+  @media screen and (max-width: 1125px) {
+    //1125px it resize so must break in 1 columns
+    flex: initial;
+
+    &::before {
+      content: ' ';
+      position: absolute;
+      height: 1px;
+      bottom: -30px;
+      left: 30%;
+      width: 40%;
+      background: $grey-line-color;
+    }
+
+    &:last-child:before {
+      display: none;
+    }
+  }
+
+  h3 {
+    font: $date-font;
+    letter-spacing: 0.6em;
+    margin: 20px 0;
+  }
+
+  h2 {
+    color: $grey-text-color;
+    font: $degree-font;
+  }
+
+  b {
+    color: black;
+    font-weight: $desc-font-weight-bolder;
+  }
+}
+
+.structureBot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 50px;
+}
+
+.question {
+  max-width: 420px;
+
+  h2 {
+    font: $desc-font-bold;
+    color: $primary-color;
+    margin-bottom: 1em;
+  }
+
+  p.b {
+    font-weight: $primary-font-weight-bold;
+  }
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid $grey-line-color;
+  margin: 30px 50px;
+}

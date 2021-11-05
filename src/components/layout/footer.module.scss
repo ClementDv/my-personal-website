@@ -1,0 +1,29 @@
+@import '../../assets/styles/theme';
+
+.separator {
+  border: 1px solid white;
+  margin: 0;
+}
+
+.footer {
+  background: $secondary-color;
+  color: white;
+  text-align: center;
+
+  padding: $section-padding;
+
+  a {
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.legacyNotice {
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

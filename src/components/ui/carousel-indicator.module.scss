@@ -1,0 +1,32 @@
+@import '../../assets/styles/theme';
+
+.indicatorEmpty {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.indicatorFocus {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: $primary-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.indicatorFocus,
+.indicatorEmpty {
+  @media screen and (max-width: $tablet-break-width) {
+    height: 15px;
+    width: 15px;
+  }
+}

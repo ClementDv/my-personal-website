@@ -1,0 +1,27 @@
+@import '../../assets/styles/theme';
+
+.modal {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  overflow-y: scroll;
+  outline: transparent;
+
+  &.visible {
+    display: block !important;
+  }
+}
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 120px 20px 20px;
+
+  @media screen and (max-width: $tablet-break-width) {
+    padding: 120px 5px 5px;
+  }
+}

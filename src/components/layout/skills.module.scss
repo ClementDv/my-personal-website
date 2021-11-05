@@ -1,0 +1,84 @@
+@import '../../assets/styles/theme';
+
+$cell-width: 400px;
+
+.skills {
+  position: relative;
+  padding: $section-padding 0;
+  overflow: hidden;
+}
+
+.separator {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: -20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+
+  > * {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.separator-first {
+  background-color: $secondary-color;
+
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+}
+
+.separator-second,
+.separator-third {
+  background-color: $secondary-color;
+
+  border-radius: 100%;
+  height: 13px;
+  width: 13px;
+}
+
+.structure {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.5em;
+  grid-row-gap: $section-padding;
+
+  @media screen and (max-width: 1030px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.cell {
+  width: 100%;
+  max-width: $cell-width;
+
+  h2 {
+    font: $desc-font-bolder;
+    margin: 0 0 20px;
+  }
+
+  p {
+    b {
+      font-weight: $primary-font-weight-bold;
+    }
+  }
+
+  ul {
+    li {
+      &::before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='m173.898 439.404-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'/%3E%3C/svg%3E");
+        display: inline-block;
+        width: 0.575em;
+        height: 0.575em;
+        margin-right: 0.25em;
+      }
+    }
+  }
+}

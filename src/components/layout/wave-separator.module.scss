@@ -1,0 +1,17 @@
+@import '../../assets/styles/theme';
+
+.svg {
+  display: block;
+
+  path:nth-child(1) {
+    fill: transparentize($primary-color, 0.7);
+  }
+
+  path:nth-child(2) {
+    fill: transparentize($primary-color, 0.5);
+  }
+
+  path:nth-child(3) {
+    fill: $secondary-color;
+  }
+}

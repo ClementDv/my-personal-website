@@ -1,0 +1,78 @@
+@import '../../assets/styles/theme';
+
+$border-radius-value: 5px;
+
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  padding: 20px 20px 40px;
+  border-radius: $border-radius-value;
+  background: url('../../assets/images/contact/background.jpg') center / cover;
+  color: white;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(62, 103, 153, 0.82);
+    border-radius: $border-radius-value;
+  }
+}
+
+.content {
+  position: relative;
+}
+
+.closeButton {
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+
+  font-size: 0.9em;
+  background: none;
+  color: white;
+
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background: white;
+    color: $secondary-color;
+  }
+
+  .closeIcon {
+    position: relative;
+    left: 0.02em;
+  }
+}
+
+.fieldWrapper {
+  display: flex;
+  width: fit-content;
+  margin: 15px auto 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+  font-size: 1.25em;
+}
+
+.buttonIcon {
+  display: inline-block;
+  padding-right: 0.25em;
+}
+
+.breakHere {
+  display: inline-block;
+}

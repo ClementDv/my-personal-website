@@ -1,0 +1,76 @@
+@use 'sass:math';
+@import '../../assets/styles/theme';
+
+$wave-ratio: math.div(1920, 135.2);
+
+.section {
+  padding: $section-padding 0;
+  position: relative;
+
+  @media screen and (max-width: $tablet-break-width) {
+    &.description {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.information {
+  padding-top: 20px;
+  background: $secondary-color;
+  text-align: center;
+}
+
+.textStatus {
+  color: white;
+  max-width: 530px;
+  margin-right: auto;
+  margin-left: auto;
+  font: $desc-font-regular;
+
+  b {
+    font-weight: $desc-font-weight-bold;
+  }
+
+  @media screen and (max-width: $tablet-break-width) {
+    max-width: 445px;
+  }
+}
+
+.descContainer {
+  text-align: justify;
+  --container-width: min(100vw, #{$container-max-width}) - #{$container-padding * 2};
+  margin-right: calc(40vw - (100vw - var(--container-width)) / 2);
+  padding-bottom: 30px;
+
+  @media screen and (max-width: $tablet-break-width) {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+}
+
+.profileContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: calc(100% + #{math.div(1, $wave-ratio) * 100vw});
+  z-index: -1;
+  margin-top: 40px;
+
+  img {
+    object-position: 30% 50%;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  @media screen and (max-width: $tablet-break-width) {
+    margin-top: 0;
+    position: inherit;
+    top: #{math.div(1, $wave-ratio) * 100vw};
+    height: max(260px, 60vw);
+    width: 100%;
+
+    img {
+      clip-path: polygon(0% 5%, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+}

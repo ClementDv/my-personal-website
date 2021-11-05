@@ -1,0 +1,15 @@
+@import '../../assets/styles/theme';
+
+.container {
+  margin: 0 auto;
+  padding: 0 $container-padding;
+  max-width: $container-max-width;
+
+  @media screen and (max-width: $tablet-break-width) {
+    padding: 0 15px;
+  }
+}
+
+.container-center {
+  max-width: 1620px;
+}

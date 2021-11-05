@@ -1,0 +1,42 @@
+$primary-color: #4082ed;
+$secondary-color: #3e6799;
+
+$section-padding: 50px; // vertical padding
+
+$tablet-break-width: 720px;
+$phone-break-width: 460px;
+
+$container-padding: 30px;
+$container-max-width: 1400px;
+
+$primary-font: 'Open Sans', sans-serif;
+$primary-font-weight: 300;
+$primary-font-weight-bold: 400;
+$primary-font-size: 22px;
+$primary-tablet-size: 18px;
+$primary-phone-size: 16px;
+
+$title-font: 'Montserrat', sans-serif;
+$title-font-weight: 300;
+$title-font-weight-bold: 500;
+$title-font-weight-bolder: 700;
+
+$desc-font: 'Roboto', sans-serif;
+$desc-font-weight: 300;
+$desc-font-weight-bold: 500;
+$desc-font-weight-bolder: 700;
+
+$header-name-font: $title-font-weight-bolder 2.5em $title-font;
+$section-title-font: $title-font-weight-bold 2.5em $title-font;
+$navbar-font: $desc-font-weight 1.125em $desc-font;
+$desc-font-regular: $desc-font-weight 1.25em $desc-font;
+$desc-font-bold: $desc-font-weight-bold 1.25em $desc-font;
+$desc-font-bolder: $desc-font-weight-bolder 2.5em $desc-font;
+$date-font: $title-font-weight 1em $title-font;
+$degree-font: $title-font-weight-bold 1.25em $title-font;
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/

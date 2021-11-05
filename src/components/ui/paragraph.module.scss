@@ -1,0 +1,14 @@
+@import '../../assets/styles/theme';
+
+.p {
+  margin-top: 0;
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  b {
+    font-weight: $primary-font-weight-bold;
+  }
+}

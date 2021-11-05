@@ -1,0 +1,29 @@
+@import '../../assets/styles/theme';
+
+.button {
+  display: inline-block;
+  padding: 5px 30px;
+
+  font: $desc-font-bold;
+  color: #fff;
+  text-align: center;
+
+  border: 2px solid #fff;
+  border-radius: 50px;
+
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    color: $secondary-color;
+    background: #fff;
+  }
+}
+
+.background-primary {
+  background: $secondary-color;
+}
+
+.background-ghost {
+  background: none;
+}

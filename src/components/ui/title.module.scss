@@ -1,0 +1,60 @@
+@use 'sass:math';
+@import '../../assets/styles/theme';
+
+$line-width: 70%;
+$center-line-width: 50%;
+
+.title {
+  margin-top: 0;
+  margin-bottom: 60px;
+
+  position: relative;
+  display: inline-block;
+  font: $section-title-font;
+  color: $primary-color;
+
+  small {
+    display: block;
+    font-weight: $title-font-weight;
+    font-size: 0.85em;
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: $line-width;
+    height: 3px;
+    bottom: -20px;
+    background: $secondary-color;
+  }
+}
+
+.align-left::after {
+  left: 0;
+}
+
+.align-center::after {
+  left: math.div(100% - $center-line-width, 2);
+  width: $center-line-width;
+}
+
+.container-center {
+  text-align: center;
+}
+
+.color-inverted {
+  color: white;
+
+  &:after {
+    background: white;
+  }
+}
+
+.separator-false {
+  &::after {
+    display: none;
+  }
+
+  margin-bottom: 20px;
+}

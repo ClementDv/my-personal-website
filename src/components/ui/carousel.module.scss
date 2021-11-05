@@ -1,0 +1,92 @@
+@import '../../assets/styles/theme';
+
+.carouselDisplay {
+  position: relative;
+  overflow: hidden;
+}
+
+.halfPart {
+  flex: 0 0 50%;
+}
+
+.buttonSwipeLeft,
+.buttonSwipeRight {
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.125em;
+  line-height: 40px;
+  color: $primary-color;
+  border-radius: 50%;
+
+  @media screen and (max-width: $phone-break-width) {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  transition: ease-in-out 0.3s;
+
+  @media (pointer: fine) {
+    &:hover {
+      cursor: pointer;
+      background: $primary-color;
+      color: white;
+    }
+  }
+}
+
+.buttonSwipeLeft {
+  left: 20px;
+
+  @media screen and (max-width: $phone-break-width) {
+    left: 2px;
+  }
+}
+
+.buttonSwipeRight {
+  right: 20px;
+
+  @media screen and (max-width: $phone-break-width) {
+    right: 2px;
+  }
+}
+
+.chevronLeftIcon {
+  position: relative;
+  right: 0.015em;
+}
+
+.chevronRightIcon {
+  position: relative;
+  left: 0.05em;
+}
+
+.unselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.carousel {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+
+.frame {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: stretch;
+}

@@ -1,0 +1,40 @@
+@import 'theme';
+@import '~modern-normalize/modern-normalize.css';
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+
+body {
+  font-family: $primary-font;
+  font-weight: $primary-font-weight;
+  font-size: $primary-font-size;
+
+  @media screen and (max-width: $tablet-break-width) {
+    font-size: $primary-tablet-size;
+  }
+
+  @media screen and (max-width: $phone-break-width) {
+    font-size: $primary-phone-size;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: inherit;
+}
