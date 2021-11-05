@@ -7,6 +7,7 @@ const images = !process.env.IMAGES_PATH
       };
 
 module.exports = {
+    basePath: process.env.BASE_PATH,
     images,
     exportPathMap: async function () {
         return {
