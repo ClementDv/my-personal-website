@@ -29,7 +29,7 @@ export function Skills() {
                         }
                     >
                         <Paragraph>
-                            Développement d’<b>API Restfull</b> avec Java et SpringBoot. Mes applications sont{' '}
+                            Développement d’<b>API Restful</b> avec Java et SpringBoot. Mes applications sont{' '}
                             <b>testées et documentées</b>.
                         </Paragraph>
                     </Cell>
@@ -50,7 +50,7 @@ export function Skills() {
                     </Cell>
                     <Cell title='Interface Utilisateur' className={styles.cell + '-three'}>
                         <Paragraph>
-                            Création d’interfaces utilisateurs web afin <b>d’intéragir</b> avec les API. Utilisation de
+                            Création d’interfaces utilisateurs web afin <b>d’interagir</b> avec les API. Utilisation de
                             technologies web telles que <b>Angular</b> ou <b>NextJs (React)</b>.
                         </Paragraph>
                     </Cell>
@@ -66,13 +66,13 @@ export function Skills() {
                     >
                         <Paragraph>
                             Gestion du déploiement des API avec <b>docker et docker compose</b>. Mise en place{' '}
-                            <b>d’architecture microservices</b> afin de facilité le déploiement.
+                            <b>d’architectures microservices</b> afin de faciliter le déploiement.
                         </Paragraph>
                     </Cell>
                     <Cell title='Outils' className={styles.cell + '-five'}>
                         <Paragraph>
                             <b>API REST :</b> IntelliJ, Maven, Gradle, SpringBoot, SpringData JPA, Spring Security,
-                            Spring Mvc, Jacoco, Mapstruct, lombok, Junit, Mockito, OpenAPI, Swagger
+                            Spring Mvc, Jacoco, Mapstruct, Lombok, Junit, Mockito, OpenAPI, Swagger
                         </Paragraph>
                         <Paragraph>
                             <b>Web :</b> Html, CSS, JS, TS, React, Angular, NextJs

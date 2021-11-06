@@ -15,7 +15,7 @@ export function LegalNotice() {
                     <ParagraphTitle>Éditeur du site</ParagraphTitle>
                     <Paragraph>Éditeur du site : Clément POIRIER</Paragraph>
                     <Paragraph>Contacter l’éditeur du site : clement@poirier.io</Paragraph>
-                    <Paragraph>Hébergement : Vercel</Paragraph>
+                    <Paragraph>Hébergement : GitHub Page</Paragraph>
                 </div>
                 <div className={styles.category}>
                     <ParagraphTitle>Description</ParagraphTitle>
@@ -24,7 +24,7 @@ export function LegalNotice() {
                 <div className={styles.category}>
                     <ParagraphTitle>Droits d’auteur</ParagraphTitle>
                     <Paragraph>
-                        Les éléments du site https://clement@poirier.fr incluant les textes, les présentations, les
+                        Les éléments du site https://clementpoirier.fr incluant les textes, les présentations, les
                         arborescences, algorithmes, mises en forme sont la propriétés de Clément POIRIER, éditeur du
                         site.
                     </Paragraph>

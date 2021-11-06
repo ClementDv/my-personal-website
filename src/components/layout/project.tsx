@@ -52,7 +52,7 @@ const projectDescriptions: ProjectDescription[] = [
         id: 'p2',
         logo: LogoTourGuide,
         description:
-            'Application de voyage qui récompense les utilisateurs en fontion des lieux fréquentés. ' +
+            'Application de voyage qui récompense les utilisateurs en fonction des lieux fréquentés. ' +
             "Le but du projet est d'améliorer les performances de l'application afin de pouvoir gérer un flux " +
             'important de personnes.',
         technologies: 'Java, SpringBoot, Git, Maven, Jacoco, Lombok, MapStruct, JUnit, OpenApi, Swagger, Docker.',
@@ -69,7 +69,7 @@ const projectDescriptions: ProjectDescription[] = [
             "Application de finance qui permet de gérer les transferts et l'affichage des actions mises en ligne.",
         technologies: 'Java, SpringBoot, SpringSecurity, JpaRepository, Thymeleaf, Git, Maven, Jacoco, JUnit, MySql.',
         findOutMore:
-            "Une interface utilisateur est disponnible. Pour accéder à l'application il faut être authentifié.",
+            "Une interface utilisateur est disponible. Pour accéder à l'application il faut être authentifié.",
         codeLink: 'https://github.com/ClementDv/OpCl-JAVA-P7',
         imageFrame: ImageFramePoseidon,
     },

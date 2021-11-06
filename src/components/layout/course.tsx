@@ -16,8 +16,8 @@ export function Course() {
                     <small>Mon</small>Parcours
                 </Title>
                 <div className={styles.structureTop}>
-                    <Cell img={logoLycee} date='2014-2017' degree='Baccalauréat Scientifique' />
-                    <Cell img={logoEpitech} date='2017-2019' degree='1ère et 2ème année' />
+                    <Cell img={logoLycee} date='2014-2017' degree='Baccalauréat scientifique' />
+                    <Cell img={logoEpitech} date='2017-2019' degree='1ère et 2ème années' />
                     <Cell
                         img={logoOpenclassroom}
                         date='2020-2021'
@@ -29,13 +29,13 @@ export function Course() {
 
                 <div className={styles.structureBot}>
                     <Question title={'Pourquoi ce parcours ?'}>
-                        Après la réussite de mon Bac j’ai voulu faire de <b>ma passion mon métier </b>
-                        c’est pourquoi j’ai choisi l’informatique, j’ai validé mes premières compétences avec Epitech.
+                        Après la réussite de mon Bac, j’ai voulu faire de <b>ma passion mon métier </b>.
+                        C’est pourquoi j’ai choisi l’informatique. J’ai validé mes premières compétences avec Epitech.
                         Puis, j’ai souhaité me <b>spécialiser en langage Java</b>, formation que j’ai effectuée avec
                         OpenClassroom.
                     </Question>
                     <Question title={'Pourquoi Java ?'}>
-                        J’ai choisi java afin de développer la <b>partie Backend</b> des projets. J’ai aussi été séduis
+                        J’ai choisi java afin de développer la <b>partie Backend</b> des projets. J’ai aussi été séduit
                         par la formation, j’ai pu apprendre à <b>mener des projets</b>, les <b>structurer</b>, les{' '}
                         <b>développer</b>, les <b>tester</b>, les <b>documenter</b> et les <b>présenter</b> en{' '}
                         <b>respectant les attentes client</b>.

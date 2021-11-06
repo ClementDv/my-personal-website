@@ -28,13 +28,13 @@ export function About() {
                             âge.
                         </Paragraph>
                         <Paragraph>
-                            Je suis <b>diplomé en tant que développeur Java</b>. Créatif et persévérant, j’apprécie de
+                            Je suis <b>diplômé en tant que développeur Java</b>. Créatif et persévérant, j’apprécie de
                             découvrir des<b> nouvelles technologies</b>.
                         </Paragraph>
                         <Paragraph>
-                            J’aime <b>m’impliquer dans des projets</b>. Au préalable je prends le temps de la reflexion.
-                            Je n’hésite pas à utiliser une feuille et un stylo avant d’écrire les premières lignes de
-                            code.
+                            J’aime <b>m’impliquer dans des projets</b>. Au préalable, je prends le temps de la
+                            réflexion. Je n’hésite pas à utiliser une feuille et un stylo avant d’écrire les premières
+                            lignes de code.
                         </Paragraph>
                         <Paragraph>
                             Je suis consciencieux et cherche à m’assurer en permanence de la{' '}
@@ -47,10 +47,10 @@ export function About() {
                     </div>
                 </Container>
                 <div className={styles.profileContainer}>
-                    <Image alt='Photo Clément Poirier' src={profileImg} layout='fill' objectFit='cover' />
+                    <Image alt='Photo Clément Poirier' src={profileImg} layout='fill' objectFit='cover'/>
                 </div>
             </section>
-            <WaveSeparator />
+            <WaveSeparator/>
             <section className={styles.section + ' ' + styles.information}>
                 <Container>
                     <Paragraph className={styles.textStatus}>
@@ -60,7 +60,7 @@ export function About() {
                 </Container>
             </section>
             <Modal visible={contactVisible} onClose={hideContact}>
-                <Contact onClose={hideContact} />
+                <Contact onClose={hideContact}/>
             </Modal>
         </>
     );
