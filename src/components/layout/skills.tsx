@@ -9,9 +9,9 @@ export function Skills() {
     return (
         <section id='skills' className={styles.skills}>
             <div className={styles.separator}>
-                <div className={styles['separator-first']} />
-                <div className={styles['separator-second']} />
-                <div className={styles['separator-third']} />
+                <div className={styles['separator-first']}/>
+                <div className={styles['separator-second']}/>
+                <div className={styles['separator-third']}/>
             </div>
             <Container type='center'>
                 <Title align='center'>
@@ -23,7 +23,7 @@ export function Skills() {
                         title={
                             <>
                                 Création
-                                <br />
+                                <br/>
                                 d&apos;API
                             </>
                         }
@@ -37,13 +37,14 @@ export function Skills() {
                         title={
                             <>
                                 Gestion de
-                                <br />
+                                <br/>
                                 Projets
                             </>
                         }
                         className={styles.cell + '-two'}
                     >
                         <Paragraph>
+                            Analyse des <b>besoins</b> pour établir ou suivre un <b>cahier des charges</b>.
                             Utilisation des <b>méthodes agiles</b> afin de planifier au mieux la construction des
                             projets. Mise en place d’un <b>tableau Kanban</b> ou de la <b>méthode SCRUM</b>.
                         </Paragraph>
@@ -58,7 +59,7 @@ export function Skills() {
                         title={
                             <>
                                 Déploiement
-                                <br />
+                                <br/>
                                 d&apos;API
                             </>
                         }
