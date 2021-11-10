@@ -7,7 +7,8 @@
 
 This website presents me, my skills, my background and the most important projects of my training.</br>
 I developed it to learn more about the web and new technologies like React and NextJs.</br>
-I decided to leave it open source in order to show my work and the skills I was able to acquire in this project.
+I decided to leave it open source in order to show my work and the skills I was able to acquire in this project.</br></br>
+The adress of the website is : https://clementpoirier.fr
 
 ## Technologies
 
@@ -39,10 +40,37 @@ On touchscreen you can swipe.
 
 ### GitHub Actions
 
+Script in :
+```
+/.github/workflows/deploy.yml
+```
+
+Executed on all push with the tag **prod** :
+
+```
+on:
+  push:
+    tags:
+      - prod
+```
+
 ### GitHub page
+
+It generate github page using this [script](https://github.com/JamesIves/github-pages-deploy-action) : 
+
+```
+- name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: github-pages
+          folder: ./out
+```
+
+<img src="https://github.com/ClementDv/my-personal-website/blob/main/.readme/img/branchespage.JPG" alt="branches of website project" width="300">
 
 ### CloudFlare
 
+Redirect https://clementpoirier.fr to gitHub page
 _____________
 
 Thank You.
