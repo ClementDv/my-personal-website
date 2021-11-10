@@ -56,7 +56,7 @@ on:
 
 ### GitHub page
 
-It generate github page using this [script](https://github.com/JamesIves/github-pages-deploy-action) : 
+It generates Github page using this [script](https://github.com/JamesIves/github-pages-deploy-action) : 
 
 ```
 - name: Deploy
@@ -70,7 +70,7 @@ It generate github page using this [script](https://github.com/JamesIves/github-
 
 ### CloudFlare
 
-Redirect https://clementpoirier.fr to gitHub page
+Redirect https://clementpoirier.fr to GitHub page
 _____________
 
 Thank You.
