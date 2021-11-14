@@ -12,13 +12,13 @@ The adress of the website is : https://clementpoirier.fr
 
 ## Technologies
 
-1. [Node js](https://nodejs.org/en/download/)
+1. [Node.js](https://nodejs.org/en/download/)
 2. [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
-3. [Next js](https://nextjs.org/docs)
+3. [Next.js](https://nextjs.org/docs)
 
 I used code formatter [prettier](https://prettier.io/) and code linter [eslint](https://eslint.org/).
 
-## Custom components
+## Custom React components
 
 I created my own components so that it is designed as I wish and that I manage their implementation
 
