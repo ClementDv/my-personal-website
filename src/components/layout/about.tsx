@@ -24,7 +24,7 @@ export function About() {
                             <small>À</small>Propos
                         </Title>
                         <Paragraph>
-                            Je suis un développeur de 22 ans, <b>passionné par l’informatique</b> depuis mon plus jeune
+                            Je suis un développeur de 23 ans, <b>passionné par l’informatique</b> depuis mon plus jeune
                             âge.
                         </Paragraph>
                         <Paragraph>
