@@ -68,6 +68,13 @@ It generates Github page using this [script](https://github.com/JamesIves/github
 
 <img src="https://github.com/ClementDv/my-personal-website/blob/main/.readme/img/branchespage.JPG" alt="branches of website project" width="300">
 
+Command to launch prod :
+
+```
+git tag -f prod
+git push -f origin prod
+```
+
 ### CloudFlare
 
 Redirect https://clementpoirier.fr to GitHub page
